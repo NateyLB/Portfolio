@@ -1,0 +1,33 @@
+.workContainer{
+    height: fit-content;
+    width: 100%;
+
+    .card{
+        margin-top: 3.5vh;
+        .flexDisplay(column, space-evenly, center);
+        height: 40vh;
+
+        @media @desktop{
+            height: 80vh;
+        }
+        .iframe{
+            width: 80%;
+            height: 30vh;
+            border-radius: 10px;
+
+            @media @desktop{
+                height: 60vh;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+        }
+
+    }
+
+
+    
+}

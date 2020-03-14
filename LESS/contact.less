@@ -1,0 +1,36 @@
+.contactContainer{
+    .flexDisplay(row, space-around, center);
+    height: 30vh;
+    width: 100%;
+
+   @media @desktop{
+       padding-top:5vh;
+   }
+    
+
+
+    .email{
+        .flexDisplay(column, space-around, center);
+        height: 15vh;
+
+        @media @tablet{
+            height: 20vh;
+            margin-top: 5vh;
+        }
+
+        @media @desktop{
+            height: 40vh;
+        }
+
+        i{
+            font-size: 10rem;
+            color: white;
+        }
+
+        p{
+            color: white;
+            font-size: 2rem;
+        }
+    }
+}
+

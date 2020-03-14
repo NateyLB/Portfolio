@@ -1,0 +1,40 @@
+.aboutContainer{
+    padding-top: 5vh;
+    .flexDisplay(column, space-around, center);
+    height: 35vh;
+    width: 100%;
+    .backgroundCard{
+        .flexDisplay(column, space-around, center);
+        width: 80%;
+        height: 35vh;
+        background-color:rgb(141, 135, 135);
+        border-radius: 10px;
+
+
+    .about{
+        font-size: 2rem;
+        width: 90%;
+        @media @desktop{
+            font-size: 1.25rem
+        }
+    }
+}
+}
+
+.artifactsContainer{
+    .flexDisplay(row, space-around, center);
+
+    .gitLink{
+        margin-top: 5vh;
+        a{
+            i{
+                font-size: 10rem;
+
+                @media @desktop {
+                    font-size: 5rem
+                }
+            }
+        }
+    }
+}
+

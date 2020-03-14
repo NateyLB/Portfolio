@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color: rgb(37, 33, 33);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header{
+    width: 100%;
+    height: 5vh;
+    .flexDisplay(row, space-evenly, center);
+    .nav{
+        .flexDisplay(row, space-evenly, center);
+        width: 50%;
+        height: 5vh;
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+
+            @media @desktop{
+                font-size: 1.25rem
+            }
+        }
+    }
+}
+
+.imgContainer{
+    .flexDisplay(row, center, center);
+    height: fit-content;
+    width: 100%;
+
+    // @media @desktop{
+    //     height: 40vh;
+    // }
+
+    .img{
+        width: 80%;
+        height: 20vh;
+
+        @media @desktop{
+            height: 50vh;
+        }
+    }
+}
+
+.introContainer{
+    padding-top: 5vh;
+    .flexDisplay(column, space-around, center);
+    height: 30vh;
+    width: 100%;
+
+    @media @mobile{
+        height: 20vh;
+    }
+    .backgroundCard{
+        .flexDisplay(column, space-around, center);
+        width: 80%;
+        height: 30vh;
+        background-color:rgb(141, 135, 135);
+        border-radius: 10px;
+
+        @media @mobile{
+            height: 20vh;
+        }
+
+    .intro{
+        font-size: 2rem;
+        width: 90%;
+        @media @desktop{
+            font-size: 1.25rem
+        }
+    }
+}
+}
+
